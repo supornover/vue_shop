@@ -1,5 +1,6 @@
 <template>
     <el-container class="home-container">
+      <!-- 头部区域-->
       <el-header>
           <div>
               <img src="../assets/heima.png" alt="黑马">
@@ -7,7 +8,9 @@
           </div>
           <el-button type="info" @click="logout">退出</el-button>
       </el-header>
+      <!-- 中心区域-->
       <el-container>
+        <!-- 侧边栏区域-->
         <el-aside :width="isCollapse? '64px': '200px'">
             <div class="toggle-button" @click="toggle"> | | | </div>
             <el-menu
@@ -36,6 +39,7 @@
       </el-submenu>
     </el-menu>
         </el-aside>
+        <!-- 内容显示区域-->
         <el-main>
           <!--  路由占位符 -->
           <router-view></router-view>

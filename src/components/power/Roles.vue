@@ -211,7 +211,6 @@ export default {
         this.$message.error('获取用户信息失败')
       }
       this.rulesData = res.data
-      // this.id = id
       this.editDiaVisible = true
     },
     addRolesConfim () {
